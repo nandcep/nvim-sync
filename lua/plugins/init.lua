@@ -21,27 +21,9 @@ return {
       { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
     },
     opts = {
-      
-    },
-  },
-
-
-  {
-    "folke/edgy.nvim",
-    event = "VeryLazy",
-    opts = {
-      left = {
-        {
-          title = "Nvim Tree",
-          ft = "NvimTree",
-          size = { height = 0.6 },
-        },
-        {
-          title = "Outline",
-          ft = "Outline",
-          size = { height = 0.4 },
-        },
-      },
+      outline_window = {
+        width = 20
+      }
     },
   },
 
