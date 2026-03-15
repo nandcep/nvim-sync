@@ -51,6 +51,9 @@ return {
             root_files = { "go.mod", ".git" },
           })
         },
+        summary = {
+          open = 'botright split | resize 10'
+        }
       })
     end
   },
