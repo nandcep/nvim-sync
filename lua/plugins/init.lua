@@ -21,9 +21,7 @@ return {
       { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
     },
     opts = {
-      outline_window = {
-        width = 20
-      }
+    
     },
   },
 
@@ -53,7 +51,7 @@ return {
             root_files = { "go.mod", ".git" },
           })
         },
-    })
+      })
     end
   },
 
