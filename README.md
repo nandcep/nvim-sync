@@ -1,4 +1,4 @@
-Forked and customized for my personal Neovim with NvChad plugins to backup and sync across devices.
+Forked and customized based on my personal Neovim with NvChad plugins to backup and sync across devices.
 
 **This repo is supposed to be used as config by NvChad users!**
 
