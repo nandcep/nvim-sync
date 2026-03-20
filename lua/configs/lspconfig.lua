@@ -1,11 +1,11 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "gopls", "ansiblels", "ts_ls", "helm-ls", "yamlls", "jdtls" }
+local servers = { "gopls", "ts_ls", "yamlls", "jdtls" }
 -- vim.lsp.enable(servers)
 
--- read :h vim.lsp.config for changing options of lsp servers 
+-- read :h vim.lsp.config for changing options of lsp servers
 
-local lombok_path = vim.fn.expand("~/.local/share/nvim/lombok/lombok.jar")
+local lombok_path = vim.fn.expand "~/.local/share/nvim/lombok/lombok.jar"
 local nvlsp = require "nvchad.configs.lspconfig"
 vim.lsp.config("jdtls", {
   on_attach = nvlsp.on_attach,
