@@ -27,30 +27,30 @@ return {
     {
       "<leader>tf",
       function()
-        require("neotest").run.run(vim.fn.expand "%")
+        require("neotest").run.run(vim.fn.expand("%"))
       end,
       desc = "Run Test File",
     },
     {
       "<leader>tp",
       function()
-        require("neotest").run.run(vim.fn.fnamemodify(vim.fn.expand "%", ":h"))
+        require("neotest").run.run(vim.fn.fnamemodify(vim.fn.expand("%"), ":h"))
       end,
       desc = "Run Test Package",
     },
   },
   config = function()
-    require("neotest").setup {
+    require("neotest").setup({
       adapters = {
-        require "neotest-java",
-        require "neotest-golang" {
+        require("neotest-java"),
+        require("neotest-golang")({
           go_test_args = { "-v", "-count=1" },
           root_files = { "go.mod", ".git" },
-        },
+        }),
       },
       summary = {
         open = "botright split | resize 10",
       },
-    }
+    })
   end,
 }
