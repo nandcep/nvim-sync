@@ -19,9 +19,6 @@ return {
             },
           },
         },
-        gopls = {
-          mason = false,
-        },
         yamlls = {
           settings = {
             yaml = {
